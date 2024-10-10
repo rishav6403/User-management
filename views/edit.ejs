@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheets/jobs.css">
+    <title>Create Job Listing</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Create Job Listing</h1>
+        <div class="form-container mx-auto">
+            <form action="/update/<%= job._id %>" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Company</label>
+                    <input type="text" class="form-control" required name="company" value="<%= job.company %>">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Job Title</label>
+                    <input type="text" class="form-control" required name="job_title" value="<%=job.job_title  %>">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Experience Required (Years)</label>
+                    <input type="number" class="form-control" required name="experience_required_1" value="<%=job.experience_required_1  %>">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Additional Experience</label>
+                    <input type="text" class="form-control" required name="experience_required_2" value="<%=job.experience_required_2  %>">
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Salary</label>
+                    <input type="text" class="form-control" required name="salary"  value="<%=job.salary  %> " >
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

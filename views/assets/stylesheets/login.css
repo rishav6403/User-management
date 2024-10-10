@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 400px;
+    height: 470px;
+}
+h1{
+    text-align: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    padding: 6px;
+}
+h2 a{
+    text-decoration: none;
+    color: red;
+
+}
