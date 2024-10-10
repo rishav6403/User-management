@@ -34,7 +34,7 @@ router.get('/edit/:id', checkForAuthentication, restrictTo(["ADMIN", "Editor"]),
     return res.render("edit", { job });
 })
 
-router.post('/update/:id', async (req, res) => {
+router.post('/update/:id',checkForAuthentication, restrictTo(["ADMIN", "Editor"]), async (req, res) => {
     const { company, job_title, experience_required_1, experience_required_2, salary } = req.body;
     await jobs.findOneAndUpdate({ _id: req.params.id }, { company, job_title, experience_required_1, experience_required_2, salary }, { new: true });
     return res.redirect("/");
