@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 
 const PORT = process.env.PORT || 8080;
-const mongodb = process.env.MONGO_DB_URI || "mongodb://127.0.0.1:27017/Test";
+const mongodb = process.env.MONGO_DB_URI || "mongodb://127.0.0.1:27017/test";
 
 const { connectToMongoDB } = require("./connection")
 const staticRoute = require("./routes/staticRoute");

@@ -6,10 +6,11 @@ body {
 }
 
 div {
+    background-color: #bbbbbb;
     border: 2px solid black;
     border-radius: 10px;
-    width: 79%;
-    height: 470px;
+    width: 80%;
+    height: 520px;
 }
 h1{
     text-align: center;
@@ -38,4 +39,9 @@ h2 a{
     text-decoration: none;
     color: red;
 
+}
+#Demo{
+    height: 200px;
+    width: 270px;
+    align-items: center;
 }
